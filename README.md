@@ -25,17 +25,17 @@ employee_id, primary key, smallserial
 **Таблица 2** оклады
 ```
 оклад_id, primary key, tinyint
-salary, primary key, numeric(6,2)
-employee_id, foreign key, smallserial
+оклад, numeric(6,2)
 ```
 **Таблица 3** тип_подразделения
 ```
 тип_подразделения_id, primary key, tinyint
-структурное_подразделение_id, foreign key, tinyint
+тип_подразделения, varchar(15)
 ```
 **Таблица 4** структурное_подразделение
 ```
 структурное_подразделение_id, primary key, tinyint
+структурное_подразделение, varchar(50)
 адрес_филиала_id, foreign key, tinyint 
 тип_подразделения_id, foreign key, tinyint
 ```
